@@ -1,0 +1,25 @@
+footer {
+    background-color: $second-color;
+    color: $first-color;
+
+
+    .footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 5vh;
+
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 10px;
+    }
+}

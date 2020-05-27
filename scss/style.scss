@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import 'reset';
+@import 'variables';
+@import 'nav';
+@import 'header';
+@import 'inputs-area';
+@import 'plots';
+@import 'footer';
+
+body {
+    background-color: $first-color;
+    font-family: 'Open Sans Condensed',
+        sans-serif;
+    color: $second-color;
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+}
+
+
+
+
+input:focus {
+    outline-color: $second-color;
+}

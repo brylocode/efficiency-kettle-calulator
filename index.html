@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyznaczanie sprawności czajnika elektrycznego</title>
+
+    <script src="https://kit.fontawesome.com/67713de186.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="shortcut icon" href="img/herbal-tea.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="project-name">
+                <h1> Wyznaczanie sprawności czajnika elektrycznego</h1>
+                <img src="img/teapot.png" alt="czajnik">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#introduction">Wstęp</a></li>
+                    <li><a href="#measurments">Pomiary</a></li>
+                    <li><a href="#plots">Wykresy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header id="introduction">
+            <div class="slider">
+                <div><img src="img/slide1.png" alt=""></div>
+                <div><img src="img/slide2.png" alt=""></div>
+                <div><img src="img/slide3.png" alt=""></div>
+                <div><img src="img/slide4.png" alt=""></div>
+                <div><img src="img/slide5.png" alt=""></div>
+                <div><img src="img/slide6.png" alt=""></div>
+                <div><img src="img/slide7.png" alt=""></div>
+                <div><img src="img/slide8.png" alt=""></div>
+                <div><img src="img/slide9.png" alt=""></div>
+                <div><img src="img/slide10.png" alt=""></div>
+                <div><img src="img/slide11.png" alt=""></div>
+                <div><img src="img/slide12.png" alt=""></div>
+                <div><img src="img/slide13.png" alt=""></div>
+                <div><img src="img/slide14.png" alt=""></div>
+                <div><img src="img/slide15.png" alt=""></div>
+                <div><img src="img/slide16.png" alt=""></div>
+                <div><img src="img/slide17.png" alt=""></div>
+                <div><img src="img/slide18.png" alt=""></div>
+                <div><img src="img/slide18.png" alt=""></div>
+                <div><img src="img/slide19.png" alt=""></div>
+                <div><img src="img/slide20.png" alt=""></div>
+                <div><img src="img/slide21.png" alt=""></div>
+                <div><img src="img/slide22.png" alt=""></div>
+                <div><img src="img/slide23.png" alt=""></div>
+                <div><img src="img/slide24.png" alt=""></div>
+                <div><img src="img/slide25.png" alt=""></div>
+                <div><img src="img/slide26.png" alt=""></div>
+                <div><img src="img/slide26.png" alt=""></div>
+                <!-- <div><img src="img/slide27.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide28.png" alt=""></div>
+                <div><img src="img/slide29.png" alt=""></div> -->
+                <div><img src="img/slide30.png" alt=""></div>
+                <div><img src="img/slide31.png" alt=""></div>
+                <div><img src="img/slide32.png" alt=""></div>
+                <div><img src="img/slide33.png" alt=""></div>
+                <div><img src="img/slide34.png" alt=""></div>
+                <div><img src="img/slide35.png" alt=""></div>
+                <div><img src="img/slide35.5.png" alt=""></div>
+                <div><img src="img/slide36.png" alt=""></div>
+                <div><img src="img/slide37.png" alt=""></div>
+            </div>
+        </header>
+        <main>
+            <h2 class="inputs-area-title">Twoje pomiary:</h2>
+            <section class="inputs-area" id="measurments">
+                <div class="title-section" data-aos="fade-right">
+                    <div class="power-section">
+                        <p>Moc czajnika z którego korzystałeś:<input type="number" class="teapot-power">W</p>
+                        <p>Początkowa temperatura wody:<input type="number" class="start-water-temperature" min="-273.5"
+                                max="100">˚C
+                        </p>
+                    </div>
+                    <div class="measurement-info">
+                        <ol class="info">
+                            <h3>Instrukcja pomiarów:</h3>
+                            <li>Z tabliczki znamionowej odczytaj moc czajnika elektrycznego.</li>
+                            <li>Do dużego garnka wlej ok. 5 litrów wody. Wymieszaj w celu wyrównania temperatury</p>
+                                w naczyniu.</li>
+                            <li>Wyznaczacz temperaturę wody w garnku.</li>
+                            <li>Wlej do czajnika odmierzoną masę mody, ok 200 ml.</li>
+                            <li>Zmierz czas potrzebny do zagotowania wody. Po dokonaniu pomiaru wylej wodę.
+                                Do czajnika wlej koleją porcję wody ok 400 ml i ponownie zmierz czas do zagotowania.
+                                Dane notuj w tabeli obok</li>
+                            <li><strong>Aby dodać pomiar kliknij w przycisk "DODAJ POMIAR"</strong></li>
+                            <!-- <li><strong>Aby usunąć wszystkie pomiary kliknij w przycisk "USUŃ WSZYSTKO"</strong></li>
+                            <li><strong>Aby zobaczyć wykresy kliknij w przucisk "OBLICZ I GENERUJ WYKRESY"</strong></li> -->
+                        </ol>
+                    </div>
+                </div>
+                <div class="measurments">
+                    <div class="measurments-title">
+                        <p class="measurments-title-number">Numer pomiaru:</p>
+                        <p class="measurments-title-mass">Masa wody [kg]:</p>
+                        <p class="measurments-title-time">Czas potrzebny do zagotowania wody[s]:</p>
+                    </div>
+                    <div class="measurment-data-box"></div>
+                    <div class="btn-section">
+                        <button class="add-data-btn"><i class="fas fa-plus"></i>Dodaj pomiar</button>
+                        <button class="count-btn"> <i class="fas fa-calculator"></i>Oblicz i generuj wykresy</button>
+                        <button class="delete-all-btn"> <i class="far fa-window-close"></i>Usuń wszystko</button>
+                    </div>
+                </div>
+            </section>
+            <section class="plots" id="plots">
+                <canvas id="efficiency" width="1440" height="600"></canvas>
+                <canvas id="energy" width="1440" height="600"></canvas>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <p>&copy; 2020 Wojciech Wichary<img src="img/teapot16px.png" alt="czajnik"></p>
+            <!-- <p>#MYVLOGA</p> -->
+        </div>
+    </footer>
+
+
+
+    <!-- Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from
+    <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    -->
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
